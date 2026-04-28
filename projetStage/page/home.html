@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/background.css">
+</head>
+<body>
+    <h1>Consultez vos résultats !</h1>
+    <div class="buttons-container">
+        <button class="feature-button" id="weather-button">Météo</button>
+        <button class="feature-button" id="records-button">Données</button>
+        <button class="feature-button" id="time-button">Horloge</button>
+    </div>
+
+    <img src="../lib/pictures/rocket.png" alt="Une fusée" onclick="window.location = 'gambling.html'">
+
+    <div class="results-container">
+        <div class="result-item">
+            <h2 class="data-title">Vélocité : </h2>
+            <textarea readonly class="data"></textarea>
+        </div>
+        <div class="result-item">
+            <h2 class="data-title">Altitude : </h2>
+            <textarea readonly class="data"></textarea>
+        </div>
+        <div class="result-item">
+            <h2 class="data-title">Inclinaison : </h2>
+            <textarea readonly class="data"></textarea>
+        </div>
+        <div class="result-item">
+            <h2 class="data-title">Accélération : </h2>
+            <textarea readonly class="data"></textarea>
+        </div>
+        <div class="result-item">
+            <h2 class="data-title">Poussée : </h2>
+            <textarea readonly class="data"></textarea>
+        </div>
+        <div class="result-item">
+            <h2 class="data-title">Température extérieure : </h2>
+            <textarea readonly class="data"></textarea>
+        </div>
+    </div>
+
+    <button class="save-button" id="save-button">Enregistrer</button>
+
+
+    <script type="module" src="../script/home.js"></script>
+</body>
+</html>

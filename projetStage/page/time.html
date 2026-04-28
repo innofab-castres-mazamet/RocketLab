@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horloge</title>
+    <link rel="stylesheet" href="../style/time.css">
+    <link rel="stylesheet" href="../style/background.css">
+</head>
+    <body>
+        <h1>C'est l'heure !</h1>
+        <button id="back-button">Retour</button>
+
+        <div id="time"></div>
+        <div id="features-of-time">
+            <div id="timer-container">
+                <p id="timer">Minuteur </p>
+                <div class="buttons">
+                    <button class="start" id="timer-start">Démarrer</button>
+                    <input type="text" placeholder="Entrer une durée en minutes" id="timer-time">
+                    <textarea id="timer-result" readonly></textarea>
+                    <button class="start" id="timer-reset">Réinitialiser</button>
+                </div>
+            </div>
+            <div id="time-container">
+                <p id="chronometre">Chronomètre </p>
+                <div class="buttons">
+                    <button class="start" id="time-start">Démarrer</button>
+                    <textarea readonly id="display"></textarea>
+                    <button class="start" id="time-reset">Réinitialiser</button>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="../script/time.js"></script>
+    </body>
+</html>

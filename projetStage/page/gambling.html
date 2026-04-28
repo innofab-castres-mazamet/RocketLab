@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page détente</title>
+    <link rel="stylesheet" href="../style/gambling.css">
+    <link rel="stylesheet" href="../style/background.css">
+</head>
+<body>
+    <h1>Il est temps de se détendre ! </h1>
+    <button class="go-back">Retour</button>
+
+    <p class="money">Porte-monnaie : <span id="value-money"></span></p>
+    <p class="time">Argent gratuit dans : <span id="value-time"></span></p>
+
+    <div class="slot-machine">
+        <div class="reel" id="reel1"></div>
+        <div class="reel" id="reel2"></div>
+        <div class="reel" id="reel3"></div>
+    </div>
+
+    <p id="message"></p>
+
+    <img src="../lib/gifs/casino.gif" id="casino-gif" alt="Un gif de devanture de casino style neons">
+
+
+    <img src="../lib/pictures/spin.png" id="spin-button" onmouseenter="getsBiggerWhenAimed()" onmouseleave="getsSmallerWhenAimed()" onclick="spin()">
+    <img src="../lib/pictures/dollars.png" id="dollars">
+    <script type="module">
+        import { getsBiggerWhenAimed, getsSmallerWhenAimed, spin } from "../script/gambling.js";
+        window.getsBiggerWhenAimed = getsBiggerWhenAimed;
+        window.getsSmallerWhenAimed = getsSmallerWhenAimed;
+        window.spin = spin;
+    </script>
+</body>
+</html>
