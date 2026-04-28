@@ -1,0 +1,19 @@
+.star{
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px white;
+    animation: twinkle 2s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes twinkle{
+    from{
+        opacity: 0.2;
+    }
+    to{
+        opacity: 1;
+    }
+}
